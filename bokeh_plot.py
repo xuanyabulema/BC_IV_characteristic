@@ -152,6 +152,8 @@ legend = Legend(
 )
 plot.add_layout(legend)
 
+plot.legend.click_policy = "hide"  # 点击图例隐藏曲线
+
 # 创建绘图对象
 plot2 = figure(
     height=PLOT_HEIGHT,
@@ -221,6 +223,8 @@ legend2 = Legend(
 )
 plot2.add_layout(legend2)
 
+plot2.legend.click_policy = "hide"  # 点击图例隐藏曲线
+
 # 创建绘图对象
 plot3 = figure(
     height=PLOT_HEIGHT,
@@ -289,6 +293,7 @@ legend3 = Legend(
 )
 plot3.add_layout(legend3)
 
+plot3.legend.click_policy = "hide"  # 点击图例隐藏曲线
 
 # 创建绘图对象
 plot4 = figure(
@@ -305,6 +310,8 @@ plot4 = figure(
 )
 
 plot_style_set(plot4)
+
+plot4.legend.click_policy = "hide"  # 点击图例隐藏曲线
 
 P_all = V_all * I_all
 source_bc_p_all = ColumnDataSource(data={"v_values": V_all, "p_values": P_all})
